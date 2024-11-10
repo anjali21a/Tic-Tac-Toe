@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: none;
+            outline: none;
+        }
+        
+        html {
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: rgba(3, 1, 22, 0.911);
+            color: #fff;
+        }
+        
+        .cell {
+            width: 100%;
+            height: 120px;
+            font-size: 3rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .game_body {
+            width: 600px;
+            max-width: 100% !important;
+        }
+        
+        .desiable {
+            pointer-events: none;
+        }
+        
+        .win-message {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="win-message d-none">
+        <h1 class="text-center">Game Over!</h1>
+        <p class="text-center message">win player x</p>
+        <button onclick="ResetGame()" class="btn btn-primary mt-2">Restart</button>
+    </div>
+    <div class="container d-flex justify-content-center py-5 mt-5">
+        <div class="game_body p-5" style="max-width: 100%;">
+            <h1 class="fs-2 fw-medium text-center">TIC TAC TOE GAME</h1>
+            <div class="main mt-5">
+                <div class="d-flex align-items-center gap-3 justify-content-center mb-5">
+                    <div class="x-player-number-count bg-success p-1 text-white fw-normal rounded-1" style="font-size: 13px;">X player play 0 times
+                    </div>
+                    <div class="o-player-number-count bg-info p-1 text-white fw-normal rounded-1" style="font-size: 13px;">O player play 0 times
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="d-flex ">
+                        <div onclick="StartGame(this)" class="cell border border-white border-top-0 border-start-0" id="cell1"></div>
+                        <div onclick="StartGame(this)" class="cell border border-white border-top-0 " id="cell2"></div>
+                        <div onclick="StartGame(this)" class="cell border border-white border-top-0 border-end-0 " id="cell3"></div>
+                    </div>
+                    <div class="d-flex ">
+                        <div onclick="StartGame(this)" class="cell border border-white border-start-0 " id="cell4">
+                        </div>
+                        <div onclick="StartGame(this)" class="cell border border-white" id="cell5"></div>
+                        <div onclick="StartGame(this)" class="cell border border-white border-end-0 " id="cell6"></div>
+                    </div>
+                    <div class="d-flex ">
+                        <div onclick="StartGame(this)" class="cell border border-white border-start-0
+                        border-bottom-0" id="cell7"></div>
+                        <div onclick="StartGame(this)" class="cell border border-white border-bottom-0 " id="cell8">
+                        </div>
+                        <div onclick="StartGame(this)" class="cell border border-white border-end-0 border-bottom-0" id="cell9"></div>
+                    </div>
+                </div>
+                <div class="button mt-3 text-center">
+                    <button onclick="ResetGame()" class="btn btn-primary">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
