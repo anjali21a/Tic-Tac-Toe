@@ -27,12 +27,25 @@ This is a simple and interactive Tic Tac Toe game built using HTML, CSS, and Jav
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/anjali21a/tic-tac-toe.git
+   git clone https://github.com/anjali21a/Tic-Tac-Toe.git
    ```
 2. Open the `index.html` file in a web browser to start the game.
 
 ## Screenshots
-*Include screenshots of the game here to showcase the UI and features.*
+![Screenshot (247)](https://github.com/user-attachments/assets/c4023987-0b1c-40f9-8041-ab67b83ee446)
+
+
+
+
+![Screenshot (249)](https://github.com/user-attachments/assets/99eac798-42cf-4a67-ad1c-78cd02f1bbf1)
+
+
+
+
+![Screenshot (250)](https://github.com/user-attachments/assets/138f0273-d46b-4821-af72-c7ba06672751)
+
+
+
 
 ## Future Improvements
 - **AI Player**: Add an option for a single-player mode against an AI.
@@ -47,5 +60,5 @@ If you wish to contribute, please fork the repository and submit a pull request.
 This project is licensed under the MIT License.
 
 ## Contact
-For any questions or feedback, please contact [your email or GitHub username].
+For any questions or feedback, please contact connectkumarianjali@gmail.com.
 
