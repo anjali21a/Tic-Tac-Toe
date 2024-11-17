@@ -56,9 +56,6 @@ This is a simple and interactive Tic Tac Toe game built using HTML, CSS, and Jav
 ## Contributing
 If you wish to contribute, please fork the repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License.
-
 ## Contact
 For any questions or feedback, please contact connectkumarianjali@gmail.com.
 
